@@ -84,8 +84,17 @@ body {
     background-image: url(./img/search.png);
     background-size: contain;
     background-position: center center;
-    transition: background-color 0.3s ease;
     background-repeat: no-repeat;
+}
+
+#clear {
+    border: none;
+    height: 2.5rem;
+    width: 6rem;
+    margin-right: 20px;
+    border-radius: 1rem;
+    color: #000101;
+    font-size: 1.5rem;
 }
 
 #add:hover {
@@ -122,8 +131,7 @@ h5 {
     color: red;
 }
 
-/* Media Query for Tablets (768px to 1023px) */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 868px) and (max-width: 1023px) {
     .inputs input[type="text"] {
         width: 30rem;
         font-size: 1.2rem;
@@ -139,7 +147,23 @@ h5 {
     }
 }
 
-/* Media Query for Smartphones (up to 767px) */
+@media only screen and (min-width: 768px) and (max-width: 867px) {
+    .inputs input[type="text"] {
+        width: 20rem;
+        font-size: 1.2rem;
+        margin: auto;
+    }
+
+    .header {
+        padding: 3rem;
+    }
+
+    .display {
+        padding: 1rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     .inputs {
         flex-wrap: wrap;
@@ -155,6 +179,12 @@ h5 {
     #add {
         width: 10%;
         margin: 0.5rem 0;
+    }
+
+    #clear {
+        width: 20%;
+        margin: 0.5rem 0;
+        margin-left: 1rem;
     }
 
     .header {

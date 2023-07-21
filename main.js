@@ -42,9 +42,25 @@ function handleSearch() {
 btn.addEventListener('click', handleSearch);
 
 
+
 inputval.addEventListener('keypress', function (event) {
     if (event.key === 'Enter') {
         handleSearch();
     }
 });
+
+document.getElementById("clear").addEventListener("click", function () {
+    document.getElementById("cityinput").value = "";
+    clearWeatherInfo();
+});
+
+function clearWeatherInfo() {
+    document.getElementById("cityoutput").textContent = "";
+    document.getElementById("temp").textContent = "";
+    document.getElementById("latitude").textContent = "";
+    document.getElementById("longitude").textContent = "";
+    document.getElementById("description").textContent = "";
+    document.getElementById("wind").textContent = "";
+    document.getElementById("cloudiness").textContent = "";
+}
 
