@@ -109,6 +109,18 @@ body {
     cursor: pointer;
 }
 
+#clear:hover {
+    background-color: #d0d0d0;
+    transform: translateY(1px);
+    cursor: pointer;
+}
+
+#clear:active {
+    background-color: #d0d0d0;
+    transform: translateY(3px);
+    cursor: pointer;
+}
+
 .display {
     text-align: center;
     color: #000101;
@@ -126,6 +138,7 @@ h5 {
     font-family: 'Bruno Ace SC', cursive;
     font-size: 100px;
 }
+
 
 .red-temperature {
     color: red;
